@@ -1,12 +1,13 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ConsoleBank_CSharp;
 
 public class BankAccount
 {
-    private Client? _client;
-    private int _balance;
-    private string? _type;
+    private  Client? _client;
+    private  int _balance;
+    private  string? _type;
 
     public BankAccount(Client? client, int balance, string? type)
     {
@@ -15,7 +16,7 @@ public class BankAccount
         _type = type;
     }
 
-    public Client? Client
+    public  Client? Client
     {
         get => _client;
         set => _client = value;
