@@ -7,7 +7,7 @@ using ConsoleBank_CSharp;
 Console.WriteLine("What is your name:");
 client.Name= Console.ReadLine();
 Console.WriteLine($"Your name is: {client.Name}");*/
-Bank bank = new Bank();
+Bank bank = new Bank("PGP bank");
 /*bank.Registration();
 bank.Account();
 bank.Withdraw();
